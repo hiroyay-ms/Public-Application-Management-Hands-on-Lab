@@ -1,4 +1,4 @@
-name: Build and deploy ASP.Net Core app to Azure Web App 4
+name: cw0615-011 workflow
 
 on:
   workflow_dispatch:
@@ -52,7 +52,7 @@ jobs:
     steps:
       - uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_CREDENTIALS_4 }}
 
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
